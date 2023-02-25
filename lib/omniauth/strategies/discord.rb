@@ -23,6 +23,7 @@ module OmniAuth
           # CDN is still cdn.discordapp.com
           image: raw_info['avatar'].present? ? "https://cdn.discordapp.com/avatars/#{raw_info['id']}/#{raw_info['avatar']}" : nil,
           userid: raw_info['id']
+          provider: "Discord"
         }
       end
 
